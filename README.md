@@ -1,3 +1,3 @@
-# number-guessing-game
+## number-guessing-game
 
-# A simple guessing game program from 2023.
+### A simple guessing game program from 2023.
