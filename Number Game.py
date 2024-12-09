@@ -12,6 +12,7 @@ while game == True:
     # Change number range here ^^^. 
         # - Only works with integers, not floats (whole numbers, not decimal numbers)
         # - ALSO 1 MUST BE MINIMUM
+        # - Be sure to change the input() text on line 19 to "Guess the Number Between 1-[number]" instead of 1-100.
     guesses = 5 # Set number of Guesses
     user_guess = -1 # Subtracts 1 from total guesses every time you guess
     while(user_guess != number and guesses > 0): # This loop repeats until either the guess is correct, or the player runs out of guesses.
