@@ -1,19 +1,21 @@
 # Joel Hadley
-# Period 3
 # 02 08 2024
+# (Originally Made for my 3rd Period Computer Science)
 
 # Random Number Guessing Game!
 game = True
 
 while game == True:
     import random
-    # Chooses Random Number
-    number = random.randint(1,100)
-    # Sets number of Guesses
-    guesses = 5
-    user_guess = -1
-    while(user_guess != number and guesses > 0):
-        user_guess = (int(input("Guess the Number Between 1-100: ")))
+    # Chooses Random Number in range
+    number = random.randint(1,100) 
+    # Change number range here ^^^. 
+        # - Only works with integers, not floats (whole numbers, not decimal numbers)
+        # - ALSO 1 MUST BE MINIMUM
+    guesses = 5 # Set number of Guesses
+    user_guess = -1 # Subtracts 1 from total guesses every time you guess
+    while(user_guess != number and guesses > 0): # This loop repeats until either the guess is correct, or the player runs out of guesses.
+        user_guess = (int(input("Guess the Number Between 1-100: "))) # Input number here
         guesses = guesses -1
         # Shows if number is too high or low
         if (user_guess > number):
@@ -23,7 +25,7 @@ while game == True:
         # Shows if number is right
         else: 
             print("Congrats! You are correct! ")
-            guesses = 0
+            guesses = 0 # Resets guesses so the game can be replayed
     if(user_guess != number):
         print("You Lose. The number was " + str(int(number)))
     # Play Again Line
